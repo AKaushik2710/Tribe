@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Route } from 'react-router'
 import './App.css'
+import Login from './pages/Login';
 import Button from './Components/Button';
 import Input from './Components/Input';
 
@@ -15,8 +16,9 @@ function App() {
     console.log(count);}
   return (
     <>
-    <Input name="user" holder="Enter Username" type="text" cn="form-input" onChange={handleChange} />
-    <Button cn='btn' onClk={handleClick}>{count}</Button>
+    <Login />
+    {/* <Input name="user" holder="Enter Username" type="text" cn="form-input" onChange={handleChange} />
+    <Button cn='btn' onClk={handleClick}>{count}</Button> */}
     </>
   )
 }
